@@ -101,7 +101,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                             />
                         </div> */}
 
-                        <div className="absolute w-[calc(132/430*100%)] h-[calc(34/932*100%)] top-[calc(147/932*100%)] lg:-translate-y-full lg:top-[calc(120/820*100%)] lg:w-[calc(200/1536*100%)] lg:h-[calc(56/820*100%)] left-1/2 -translate-x-1/2">
+                        <div className="absolute w-[calc(132/430*100%)] h-[calc(34/932*100%)] top-[calc(147/932*100%)] lg:-translate-y-1/2 lg:top-[calc(66/820*100%)] lg:w-[calc(200/1536*100%)] lg:h-[calc(56/820*100%)] left-1/2 -translate-x-1/2">
                             <Image
                                 src="/images/logo/logovinpet-02.webp"
                                 alt="Logo"
@@ -147,6 +147,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                         </div>
                         <div className="lg:text-[calc(18/1536*100vw)] whitespace-nowrap text-[calc(16/430*100vw)] absolute top-[calc(540/932*100%)] lg:top-[calc(655/820*100%)] left-1/2 -translate-x-1/2 text-center text-white">
                             {isKorean ? "장소: 424 Nguyễn Thái Sơn, P An Nhơn, TPHCM" : "Địa điểm: 424 Nguyễn Thái Sơn, P An Nhơn, TPHCM"}
+                            <br className="block lg:hidden" />{" "}(Nhà Hàng Sáu Linh)
                         </div>
                     </motion.div>
                 </motion.div>
