@@ -101,7 +101,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                             />
                         </div> */}
 
-                        <div className="absolute w-[calc(132/430*100%)] h-[calc(34/932*100%)] top-[calc(147/932*100%)] lg:-translate-y-1/2 lg:top-[calc(66/820*100%)] lg:w-[calc(200/1536*100%)] lg:h-[calc(56/820*100%)] left-1/2 -translate-x-1/2">
+                        <div className="absolute w-[calc(169/430*100%)] h-[calc(48/932*100%)] top-[calc(126/932*100%)] lg:-translate-y-1/2 lg:top-[calc(66/820*100%)] lg:w-[calc(200/1536*100%)] lg:h-[calc(56/820*100%)] left-1/2 -translate-x-1/2">
                             <Image
                                 src="/images/logo/logovinpet-02.webp"
                                 alt="Logo"
@@ -133,8 +133,8 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                         {/* Invitation Content */}
                         <div className="absolute top-[calc(395/932*100%)] w-full gap-[calc(12/932*100vh)] lg:gap-4 lg:top-[calc(466/820*100%)]  left-1/2 -translate-x-1/2 text-center text-white flex flex-col items-center justify-center">
                             <div className="grid grid-cols-3 h-full items-center gap-2 lg:gap-4">
-                                <span className="text-[calc(26/430*100vw)] lg:text-[calc(30/1536*100vw)] italic px-6 md:px-6 py-2 border-y-2 border-white">
-                                    {isKorean ? "토요일" : "Thứ 7"}
+                                <span className="text-[calc(26/430*100vw)] lg:text-[calc(30/1536*100vw)] px-6 md:px-6 py-2 border-y-2 border-white">
+                                    {isKorean ? "목요일" : "Thứ 5"}
                                 </span>
                                 <div className="flex h-full items-center justify-center">
                                     <span className="text-[calc(112/430*100vw)] lg:text-[calc(128/1536*100vw)] font-light leading-[0.7] translate-y-[0.1em]">5</span>
