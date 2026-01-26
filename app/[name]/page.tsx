@@ -19,14 +19,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                 onClick={() => setIsOpen(true)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="cursor-pointer relative px-8 py-4 text-lg font-semibold text-white rounded-full 
-                    bg-linear-to-r from-purple-600 via-pink-500 to-orange-400
-                    shadow-[0_0_20px_rgba(168,85,247,0.5)]
-                    hover:shadow-[0_0_30px_rgba(168,85,247,0.8)]
-                    transition-shadow duration-300
-                    before:absolute before:inset-0 before:rounded-full before:bg-linear-to-r 
-                    before:from-purple-600 before:via-pink-500 before:to-orange-400 
-                    before:blur-lg before:opacity-50 before:-z-10"
+                className="cursor-pointer px-8 py-3 text-lg text-white rounded-full border border-white/50 bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white transition-all duration-300"
             >
                 Mở thư mời
             </motion.button>
