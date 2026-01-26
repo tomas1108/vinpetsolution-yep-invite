@@ -53,6 +53,33 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                             priority
                         />
 
+
+                        {/* Star Right */}
+                        {/* <div
+                            className="absolute translate-x-[40%] -translate-y-[44%] w-[calc(1016/1536*100%)] h-[calc(1264/820*100%)] top-0 right-0"
+                        >
+                            <Image
+                                src="/images/bg/star_right.png"
+                                alt="Start Right"
+                                width={1016}
+                                height={1264}
+                                className="aspect-1016/1264 w-full h-full object-cover"
+                            />
+                        </div> */}
+
+                        {/*Light Right */}
+                        {/* <div
+                            className="absolute translate-x-[55%] -translate-y-[25%] w-[calc(887/1536*100%)] h-[calc(665/820*100%)] top-0 right-0"
+                        >
+                            <Image
+                                src="/images/bg/light_right.png"
+                                alt="Light Right"
+                                width={887}
+                                height={665}
+                                className="aspect-887/665 w-full h-full object-cover"
+                            />
+                        </div> */}
+
                         <div className="absolute top-[calc(50/820*100%)] w-[calc(200/1536*100%)] h-[calc(56/820*100%)] left-1/2 -translate-x-1/2">
                             <Image
                                 src="/images/logo/logovinpet-02.webp"
