@@ -19,5 +19,40 @@ export const nameConstants = [
     key: "myyen",
     value: "Nguyễn Thị Mỹ Yến",
   },
-
+  {
+    key: "aixuan",
+    value: "Ngô Thị Ái Xuân",
+  },
+  {
+    key: "thuha",
+    value: "Nguyễn Thị Thu Hà",
+  },
+  {
+    key: "toan",
+    value: "Trương Duy Toàn",
+  },
+  {
+    key: "parkseryun",
+    value: "PARK SERYUN",
+  },
+  {
+    key: "sontung",
+    value: "Trần Sơn Tùng",
+  },
+  {
+    key: "vantrung",
+    value: "Trương Văn Trung",
+  },
+  {
+    key: "thuyhong",
+    value: "Trịnh Thị Thúy Hồng",
+  },
+  {
+    key: "maitruc",
+    value: "Đoàn Thị Mai Trúc",
+  },
+  {
+    key: "chihai",
+    value: "Trần Chí Hải",
+  },
 ]  
