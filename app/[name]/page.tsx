@@ -100,7 +100,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                             />
                         </div> */}
 
-                        <div className="absolute w-[calc(132/430*100%)] h-[calc(34/932*100%)] top-[calc(147/932*100%)] lg:top-[calc(50/820*100%)] lg:w-[calc(200/1536*100%)] lg:h-[calc(56/820*100%)] left-1/2 -translate-x-1/2">
+                        <div className="absolute w-[calc(132/430*100%)] h-[calc(34/932*100%)] top-[calc(147/932*100%)] lg:-translate-y-full lg:top-[calc(120/820*100%)] lg:w-[calc(200/1536*100%)] lg:h-[calc(56/820*100%)] left-1/2 -translate-x-1/2">
                             <Image
                                 src="/images/logo/logovinpet-02.webp"
                                 alt="Logo"
