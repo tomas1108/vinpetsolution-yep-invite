@@ -55,4 +55,8 @@ export const nameConstants = [
     key: "chihai",
     value: "Trần Chí Hải",
   },
+  {
+    key: "macvuong",
+    value: "Đoàn Mắc Vương",
+  },
 ]  
