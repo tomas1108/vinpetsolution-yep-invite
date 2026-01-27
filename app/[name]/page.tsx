@@ -196,7 +196,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                                 {isKorean ? "2월" : "Tháng 2"}
                             </span>
                         </div>
-                        <div className="lg:text-[calc(18/1536*100vw)] whitespace-nowrap text-[calc(15/430*100vw)] absolute top-[calc(550/932*100%)] lg:top-[calc(645/820*100%)] left-1/2 -translate-x-1/2 text-center text-white">
+                        <div className="lg:text-[calc(18/1536*100vw)] whitespace-nowrap text-[calc(15/430*100vw)] absolute top-[calc(560/932*100%)] lg:top-[calc(645/820*100%)] left-1/2 -translate-x-1/2 text-center text-white">
                             <p>
                                 {isKorean ? "장소: 424 Nguyễn Thái Sơn, P An Nhơn, TPHCM" : "Địa điểm: 424 Nguyễn Thái Sơn, P An Nhơn, TPHCM"}
                                 <br className="block lg:hidden" />{" "}{isKorean ? "(사우 린 식당)" : "(Nhà Hàng Sáu Linh)"}
