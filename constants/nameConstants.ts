@@ -57,6 +57,6 @@ export const nameConstants = [
   },
   {
     key: "macvuong",
-    value: "Đoàn Mắc Vương",
+    value: "Đoàn Mặc Vương",
   },
 ]  
