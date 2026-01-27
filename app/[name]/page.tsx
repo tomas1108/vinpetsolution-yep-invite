@@ -47,17 +47,10 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                     <motion.div
                         className="absolute w-[25%] left-1/2 -translate-x-1/2 top-[55%] -translate-y-1/2"
                         animate={{
-                            opacity: isOpen ? 1 : [1, 0.5, 1],
                             scale: isOpen ? 2 : 1,
                         }}
                         transition={{
-                            opacity: isOpen ? {
-                                duration: 0,
-                            } : {
-                                duration: 1.5,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                            },
+
                             scale: isOpen ? {
                                 duration: 0.6,
                                 ease: "easeOut",
@@ -84,7 +77,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                     whileTap={{ scale: 0.95 }}
                     className="cursor-pointer px-8 py-3 text-lg text-white rounded-full border border-white/50 bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white transition-all duration-300"
                 >
-                    {isKorean ? "초대장 열기" : "Mở thư mời"}
+                    {isKorean ? "열기" : "Open"}
                 </motion.button>
             </div>
 
@@ -165,9 +158,9 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                             />
                         </div>
 
-                        <div className="flex flex-col items-center justify-center absolute w-[calc(321/430*100%)] h-[calc(100/932*100%)] top-[calc(200/932*100%)] lg:w-[calc(621/1536*100%)] lg:h-[calc(193/820*100%)] lg:top-[calc(161/820*100%)] left-1/2 -translate-x-1/2">
+                        <div className="flex flex-col items-center justify-center absolute w-[calc(321/430*100%)] h-[calc(100/932*100%)] top-[calc(190/932*100%)] lg:w-[calc(621/1536*100%)] lg:h-[calc(193/820*100%)] lg:top-[calc(161/820*100%)] left-1/2 -translate-x-1/2">
                             <span className="text-white font-aptima text-[calc(16/430*100vw)] lg:text-[calc(24/1536*100vw)] font-bold tracking-wide uppercase">
-                                CÔNG TY TNHH VINPET VIỆT NAM
+                                {isKorean ? "VINPET Technology 유한회사" : "CÔNG TY TNHH CÔNG NGHỆ VINPET"}
                             </span>
                             <Image
                                 src="/images/bg/YEP.png"
@@ -179,7 +172,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                         </div>
 
                         <div className="absolute lg:top-[calc(375/820*100%)] top-[calc(320/932*100%)] flex flex-col gap-1 items-center justify-center left-1/2 -translate-x-1/2">
-                            <p className="whitespace-nowrap lg:text-[calc(18/1536*100vw)] text-[calc(18/430*100vw)] tracking-widest">
+                            <p className="whitespace-nowrap uppercase lg:text-[calc(18/1536*100vw)] text-[calc(18/430*100vw)] tracking-widest">
                                 {isKorean ? "정중히 초대합니다" : "Trân trọng kính mời"}
                             </p>
                             <h2 className="whitespace-nowrap text-[calc(20/430*100vw)] lg:text-[calc(30/1536*100vw)] font-bold tracking-wide uppercase">
@@ -203,7 +196,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                                 {isKorean ? "2월" : "Tháng 2"}
                             </span>
                         </div>
-                        <div className="lg:text-[calc(18/1536*100vw)] whitespace-nowrap text-[calc(15/430*100vw)] absolute top-[calc(560/932*100%)] lg:top-[calc(655/820*100%)] left-1/2 -translate-x-1/2 text-center text-white">
+                        <div className="lg:text-[calc(18/1536*100vw)] whitespace-nowrap text-[calc(15/430*100vw)] absolute top-[calc(550/932*100%)] lg:top-[calc(645/820*100%)] left-1/2 -translate-x-1/2 text-center text-white">
                             <p>
                                 {isKorean ? "장소: 424 Nguyễn Thái Sơn, P An Nhơn, TPHCM" : "Địa điểm: 424 Nguyễn Thái Sơn, P An Nhơn, TPHCM"}
                                 <br className="block lg:hidden" />{" "}{isKorean ? "(사우 린 식당)" : "(Nhà Hàng Sáu Linh)"}
