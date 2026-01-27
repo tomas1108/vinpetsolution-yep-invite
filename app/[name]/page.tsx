@@ -20,7 +20,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
         <div className="flex h-dvh items-center bg-black justify-center relative overflow-hidden">
 
             {/* Letter Image with floating animation */}
-            <motion.div
+            {/* <motion.div
                 className="absolute cursor-pointer"
                 onClick={() => setIsOpen(true)}
                 animate={{
@@ -43,7 +43,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                     className="w-[200px] md:w-[300px] h-auto drop-shadow-2xl"
                     priority
                 />
-            </motion.div>
+            </motion.div> */}
 
             <motion.button
                 onClick={() => setIsOpen(true)}
