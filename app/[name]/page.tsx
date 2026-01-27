@@ -1,5 +1,5 @@
 "use client"
-import { use, useEffect, useState } from "react";
+import { use, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { nameConstants } from "@/constants/nameConstants";
@@ -19,40 +19,75 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
     return (
         <div className="flex h-dvh items-center bg-black justify-center relative overflow-hidden">
 
-            {/* Letter Image with floating animation */}
-            {/* <motion.div
-                className="absolute cursor-pointer"
-                onClick={() => setIsOpen(true)}
-                animate={{
-                    x: [0, 10, -10, 5, -5, 0],
-                    y: [0, -15, 5, -10, 8, 0],
-                }}
-                transition={{
-                    duration: 8,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-            >
-                <Image
-                    src={isOpen ? "/images/bg/letter_open.png" : "/images/bg/letter_close.png"}
-                    alt="Letter"
-                    width={300}
-                    height={200}
-                    className="w-[200px] md:w-[300px] h-auto drop-shadow-2xl"
-                    priority
-                />
-            </motion.div> */}
+            <div className="absolute flex flex-col items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full">
+                {/* Letter Image with floating animation */}
+                <motion.div
+                    className="relative cursor-pointer"
+                    onClick={() => setIsOpen(true)}
+                    animate={{
+                        x: [0, 10, -10, 5, -5, 0],
+                        y: [0, -15, 5, -10, 8, 0],
+                    }}
+                    transition={{
+                        duration: 8,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <Image
+                        src={"/images/bg/thiepmoi.png"}
+                        alt="Letter"
+                        width={300}
+                        height={200}
+                        className="w-[200px] md:w-[300px] h-auto drop-shadow-2xl"
+                        priority
+                    />
+                    <motion.div
+                        className="absolute w-[25%] left-1/2 -translate-x-1/2 top-[55%] -translate-y-1/2"
+                        animate={{
+                            opacity: isOpen ? 1 : [1, 0.5, 1],
+                            scale: isOpen ? 2 : 1,
+                        }}
+                        transition={{
+                            opacity: isOpen ? {
+                                duration: 0,
+                            } : {
+                                duration: 1.5,
+                                repeat: Infinity,
+                                ease: "easeInOut",
+                            },
+                            scale: isOpen ? {
+                                duration: 0.6,
+                                ease: "easeOut",
+                            } : {
+                                duration: 0.3,
+                                ease: "easeInOut",
+                            },
+                        }}
+                    >
+                        <Image
+                            src={"/images/bg/vp.png"}
+                            alt="Logo Vinpet"
+                            width={200}
+                            height={200}
+                            className="w-full h-auto drop-shadow-2xl"
+                            priority
+                        />
+                    </motion.div>
+                </motion.div>
 
-            <motion.button
-                onClick={() => setIsOpen(true)}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="cursor-pointer mt-[250px] md:mt-[300px] px-8 py-3 text-lg text-white rounded-full border border-white/50 bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white transition-all duration-300"
-            >
-                {isKorean ? "초대장 열기" : "Mở thư mời"}
-            </motion.button>
+                <motion.button
+                    onClick={() => setIsOpen(true)}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="cursor-pointer px-8 py-3 text-lg text-white rounded-full border border-white/50 bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white transition-all duration-300"
+                >
+                    {isKorean ? "초대장 열기" : "Mở thư mời"}
+                </motion.button>
+            </div>
+
             {isOpen && (
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -129,7 +164,11 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                                 className="aspect-200/56 w-full h-full object-contain"
                             />
                         </div>
-                        <div className="absolute w-[calc(321/430*100%)] h-[calc(100/932*100%)] top-[calc(192/932*100%)] lg:w-[calc(621/1536*100%)] lg:h-[calc(193/820*100%)] lg:top-[calc(161/820*100%)] left-1/2 -translate-x-1/2">
+
+                        <div className="flex flex-col items-center justify-center absolute w-[calc(321/430*100%)] h-[calc(100/932*100%)] top-[calc(200/932*100%)] lg:w-[calc(621/1536*100%)] lg:h-[calc(193/820*100%)] lg:top-[calc(161/820*100%)] left-1/2 -translate-x-1/2">
+                            <span className="text-white font-aptima text-[calc(16/430*100vw)] lg:text-[calc(24/1536*100vw)] font-bold tracking-wide uppercase">
+                                CÔNG TY TNHH VINPET VIỆT NAM
+                            </span>
                             <Image
                                 src="/images/bg/YEP.png"
                                 alt="Logo"
@@ -139,7 +178,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                             />
                         </div>
 
-                        <div className="absolute lg:top-[calc(375/820*100%)] top-[calc(308/932*100%)] flex flex-col gap-1 items-center justify-center left-1/2 -translate-x-1/2">
+                        <div className="absolute lg:top-[calc(375/820*100%)] top-[calc(320/932*100%)] flex flex-col gap-1 items-center justify-center left-1/2 -translate-x-1/2">
                             <p className="whitespace-nowrap lg:text-[calc(18/1536*100vw)] text-[calc(18/430*100vw)] tracking-widest">
                                 {isKorean ? "정중히 초대합니다" : "Trân trọng kính mời"}
                             </p>
