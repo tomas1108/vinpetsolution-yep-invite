@@ -33,7 +33,7 @@ export const nameConstants = [
   },
   {
     key: "parkseryun",
-    value: "PARK SERYUN",
+    value: "Mr. PARK SERYUN (Kone)",
   },
   {
     key: "sontung",
