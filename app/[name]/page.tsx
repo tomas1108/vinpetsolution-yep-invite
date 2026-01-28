@@ -78,7 +78,7 @@ const NameDetailPage = ({ params }: { params: Promise<{ name: string }> }) => {
                     whileTap={{ scale: 0.95 }}
                     className="cursor-pointer px-8 py-3 text-lg text-white rounded-full border border-white/50 bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white transition-all duration-300"
                 >
-                    {isKorean ? "열기" : isEnglish ? "Open" : "Mở"}
+                    {isKorean ? "열기" : isEnglish ? "Open" : "Open"}
                 </motion.button>
             </div>
 
